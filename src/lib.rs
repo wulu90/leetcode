@@ -1,4 +1,5 @@
 pub mod add_two_numbers;
+pub mod longest_substring_without_repeating_characters;
 pub mod merge_sorted_array;
 pub mod pascal_triangle;
 pub mod pascal_triangle_ii;
