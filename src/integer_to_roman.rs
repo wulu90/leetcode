@@ -8,10 +8,28 @@ impl Solution {
             "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I",
         ];
         let mut s = String::from("");
+
         for i in 0..number.len() {
             let n = num / number[i];
             s.push_str(&ch[i].repeat(n as usize));
             num -= n * number[i];
+        }
+        s
+    }
+
+    pub fn int_to_roman_2(num: i32) -> String {
+        let mut num = num;
+        let number = vec![1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+        let ch = vec![
+            "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I",
+        ];
+        let mut s = String::from("");
+
+        for i in 0..number.len() {
+            while num >= number[i] {
+                num -= number[i];
+                s.push_str(&ch[i]);
+            }
         }
         s
     }
