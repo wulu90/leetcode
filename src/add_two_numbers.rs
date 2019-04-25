@@ -1,41 +1,6 @@
+use crate::linked_list::ListNode;
+
 pub struct Solution;
-
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
-
-pub fn vec_to_linklist(vec: Vec<i32>) -> Option<Box<ListNode>> {
-    let mut current = None;
-    for &v in vec.iter().rev() {
-        let mut node = ListNode::new(v);
-        node.next = current;
-        current = Some(Box::new(node));
-    }
-    current
-
-    /*
-    let mut node = Some(Box::new(ListNode::new(0)));
-    let mut shadow_node = &mut node;
-
-    for i in 0..vec.len() {
-        shadow_node.as_mut().unwrap().val = vec[i];
-        if i != (vec.len() - 1) {
-            shadow_node.as_mut().unwrap().next = Some(Box::new(ListNode::new(0)));;
-            shadow_node = &mut shadow_node.as_mut().unwrap().next;
-        }
-    }
-    node
-    */
-}
 
 impl Solution {
     pub fn add_two_numbers(
@@ -77,26 +42,23 @@ impl Solution {
 #[cfg(test)]
 mod test {
     use super::Solution;
-    use crate::add_two_numbers::vec_to_linklist;
+    use crate::linkedlist;
 
     #[test]
     fn add_two_numbers() {
         assert_eq!(
-            vec_to_linklist(vec![6, 7, 8]),
-            Solution::add_two_numbers(
-                vec_to_linklist(vec![3, 2, 1]),
-                vec_to_linklist(vec![3, 5, 7])
-            )
+            linkedlist![6, 7, 8],
+            Solution::add_two_numbers(linkedlist![3, 2, 1], linkedlist![3, 5, 7])
         );
 
         assert_eq!(
-            vec_to_linklist(vec![0]),
-            Solution::add_two_numbers(vec_to_linklist(vec![0]), vec_to_linklist(vec![0]))
+            linkedlist![0],
+            Solution::add_two_numbers(linkedlist![0], linkedlist![0])
         );
 
         assert_eq!(
-            vec_to_linklist(vec![0, 1, 1]),
-            Solution::add_two_numbers(vec_to_linklist(vec![1, 1]), vec_to_linklist(vec![9, 9]))
+            linkedlist![0, 1, 1],
+            Solution::add_two_numbers(linkedlist![1, 1], linkedlist![9, 9])
         );
     }
 }
