@@ -2,36 +2,23 @@ pub struct Solution;
 use std::collections::HashMap;
 impl Solution {
     pub fn is_valid(s: String) -> bool {
-        let mut vec: Vec<&str> = Vec::with_capacity(s.len());
         let mut hmap = HashMap::new();
-        hmap.insert("(", ")");
-        hmap.insert("[", "]");
-        hmap.insert("{", "}");
-        for i in 0..s.len() {
-            let key = &s[i..i + 1];
-            if hmap.contains_key(key) {
-                vec.push(key);
-            } else {
-                match vec.pop() {
-                    Some(v) => match hmap.get(v) {
-                        Some(t) => {
-                            if t == &key {
-                                continue;
-                            } else {
-                                return false;
-                            }
-                        }
-                        None => {
-                            return false;
-                        }
-                    },
-                    None => {
-                        return false;
-                    }
+        hmap.insert('}', '{');
+        hmap.insert(']', '[');
+        hmap.insert(')', '(');
+        let mut schar = s.chars();
+        let mut vec: Vec<char> = Vec::new();
+        while let Some(v) = schar.next() {
+            if let Some(t) = hmap.get(&v) {
+                if vec.pop() != Some(*t) {
+                    return false;
                 }
+            } else {
+                vec.push(v);
             }
         }
-        vec.len() == 0
+
+        vec.is_empty()
     }
 }
 
