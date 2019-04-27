@@ -1,4 +1,5 @@
 pub mod add_two_numbers;
+pub mod implement_str_str;
 pub mod integer_to_roman;
 pub mod longest_common_prefix;
 pub mod longest_substring_without_repeating_characters;
