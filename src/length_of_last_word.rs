@@ -4,9 +4,8 @@ impl Solution {
     pub fn length_of_last_word(s: String) -> i32 {
         let mut prelen = 0;
         let mut curlen = 0;
-        let mut char_inx = s.char_indices();
-        while let Some((_, y)) = char_inx.next() {
-            if y == ' ' {
+        for ch in s.chars() {
+            if ch == ' ' {
                 if curlen > 0 {
                     prelen = curlen;
                 };
