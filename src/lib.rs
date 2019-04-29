@@ -1,4 +1,6 @@
+pub mod add_binary;
 pub mod add_two_numbers;
+pub mod climbing_stairs;
 pub mod count_and_say;
 pub mod implement_str_str;
 pub mod integer_to_roman;
@@ -18,9 +20,8 @@ pub mod remove_element;
 pub mod reverse_integer;
 pub mod roman_to_integer;
 pub mod search_insert_position;
+pub mod sqrtx;
 pub mod two_sum;
 pub mod valid_parentheses;
-pub mod add_binary;
-pub mod sqrtx;
 
 pub mod linked_list;
