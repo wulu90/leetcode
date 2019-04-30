@@ -1,4 +1,4 @@
-use crate::linked_list::ListNode;
+use crate::leetcode::linked_list::ListNode;
 
 pub struct Solution;
 

@@ -38,6 +38,6 @@ pub fn vec_to_linklist(vec: Vec<i32>) -> Option<Box<ListNode>> {
 #[macro_export]
 macro_rules! linkedlist {
     ($($x:expr),*) => {
-        crate::linked_list::vec_to_linklist(vec![$($x.to_owned()), *])
+        crate::leetcode::linked_list::vec_to_linklist(vec![$($x.to_owned()), *])
     }
 }

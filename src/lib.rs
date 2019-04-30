@@ -20,9 +20,10 @@ pub mod remove_duplicates_from_sorted_list;
 pub mod remove_element;
 pub mod reverse_integer;
 pub mod roman_to_integer;
+pub mod same_tree;
 pub mod search_insert_position;
 pub mod sqrtx;
 pub mod two_sum;
 pub mod valid_parentheses;
 
-pub mod linked_list;
+pub mod leetcode;
