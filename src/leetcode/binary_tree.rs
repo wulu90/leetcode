@@ -26,9 +26,8 @@ pub fn to_tree(vec: Vec<Option<i32>>) -> Option<Rc<RefCell<TreeNode>>> {
     let mut queue = VecDeque::new();
     let root = Some(Rc::new(RefCell::new(TreeNode::new(vec[0].unwrap()))));
     queue.push_back(root.as_ref().unwrap().clone());
-
+    //queue.push_back(Rc::clone(root.as_ref().unwrap()));
     for a in vec[1..].chunks(2) {
-        //println!("in binary tree a {:?}", a);
         let parent = queue.pop_front().unwrap();
         if let Some(v) = a[0] {
             parent.borrow_mut().left = Some(Rc::new(RefCell::new(TreeNode::new(v))));
