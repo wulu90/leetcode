@@ -7,6 +7,7 @@ pub mod integer_to_roman;
 pub mod length_of_last_word;
 pub mod longest_common_prefix;
 pub mod longest_substring_without_repeating_characters;
+pub mod maximum_depth_of_binary_tree;
 pub mod maximun_subarray;
 pub mod median_of_two_sorted_arrays;
 pub mod merge_sorted_array;
