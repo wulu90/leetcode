@@ -19,15 +19,9 @@ impl Solution {
     ) -> bool {
         match (left, right) {
             (Some(a), Some(b)) => {
-                return a.borrow().val == b.borrow().val
-                    && Self::left_symmetric_right(
-                        a.borrow().left.clone(),
-                        b.borrow().right.clone(),
-                    )
-                    && Self::left_symmetric_right(
-                        a.borrow().right.clone(),
-                        b.borrow().left.clone(),
-                    )
+                a.borrow().val == b.borrow().val
+                    && Self::left_symmetric_right(a.borrow().left.clone(), b.borrow().right.clone())
+                    && Self::left_symmetric_right(a.borrow().right.clone(), b.borrow().left.clone())
             }
             (None, None) => true,
             _ => false,
