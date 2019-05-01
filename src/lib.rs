@@ -1,5 +1,6 @@
 pub mod add_binary;
 pub mod add_two_numbers;
+pub mod balanced_binary_tree;
 pub mod binary_tree_level_order_traversal_ii;
 pub mod climbing_stairs;
 pub mod convert_sorted_array_to_binary_search_tree;
