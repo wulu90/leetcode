@@ -33,6 +33,7 @@ pub mod search_insert_position;
 pub mod sqrtx;
 pub mod symmetric_tree;
 pub mod two_sum;
+pub mod valid_palindrome;
 pub mod valid_parentheses;
 
 pub mod leetcode;
