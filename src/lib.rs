@@ -30,6 +30,7 @@ pub mod reverse_integer;
 pub mod roman_to_integer;
 pub mod same_tree;
 pub mod search_insert_position;
+pub mod single_number;
 pub mod sqrtx;
 pub mod symmetric_tree;
 pub mod two_sum;
