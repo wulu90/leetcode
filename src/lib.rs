@@ -17,6 +17,7 @@ pub mod maximun_subarray;
 pub mod median_of_two_sorted_arrays;
 pub mod merge_sorted_array;
 pub mod merge_two_sorted_list;
+pub mod min_stack;
 pub mod minimum_depth_of_binary_tree;
 pub mod palindrome_number;
 pub mod pascal_triangle;
