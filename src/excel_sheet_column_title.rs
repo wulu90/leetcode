@@ -23,8 +23,19 @@ impl Solution {
         }
         s
     }
-}
 
+    pub fn convert_to_title_1(n: i32) -> String {
+        let mut s = String::new();
+        let mut quotient = n;
+
+        while quotient > 0 {
+            quotient -= 1;
+            s.insert(0, ('A' as u8 + (quotient % 26) as u8) as char);
+            quotient /= 26;
+        }
+        s
+    }
+}
 #[cfg(test)]
 mod test {
     use super::Solution;
