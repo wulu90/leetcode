@@ -7,6 +7,7 @@ pub mod binary_tree_level_order_traversal_ii;
 pub mod climbing_stairs;
 pub mod convert_sorted_array_to_binary_search_tree;
 pub mod count_and_say;
+pub mod excel_sheet_column_number;
 pub mod excel_sheet_column_title;
 pub mod implement_str_str;
 pub mod integer_to_roman;
