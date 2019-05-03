@@ -33,6 +33,7 @@ pub mod remove_duplicates;
 pub mod remove_duplicates_from_sorted_list;
 pub mod remove_element;
 pub mod reverse_integer;
+pub mod reverse_linked_list;
 pub mod roman_to_integer;
 pub mod rotate_array;
 pub mod same_tree;
