@@ -10,6 +10,7 @@ pub mod count_and_say;
 pub mod excel_sheet_column_number;
 pub mod excel_sheet_column_title;
 pub mod factorial_trailing_zeros;
+pub mod house_robber;
 pub mod implement_str_str;
 pub mod integer_to_roman;
 pub mod length_of_last_word;
