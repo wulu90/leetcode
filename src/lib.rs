@@ -30,6 +30,7 @@ pub mod palindrome_number;
 pub mod pascal_triangle;
 pub mod pascal_triangle_ii;
 pub mod path_sum;
+pub mod path_sum_iii;
 pub mod plus_one;
 pub mod remove_duplicates;
 pub mod remove_duplicates_from_sorted_list;
