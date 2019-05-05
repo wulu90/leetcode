@@ -48,5 +48,6 @@ pub mod two_sum;
 pub mod two_sum_ii;
 pub mod valid_palindrome;
 pub mod valid_parentheses;
+pub mod find_all_anagrams_in_a_string;
 
 pub mod leetcode;
