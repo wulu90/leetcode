@@ -10,6 +10,8 @@ pub mod count_and_say;
 pub mod excel_sheet_column_number;
 pub mod excel_sheet_column_title;
 pub mod factorial_trailing_zeros;
+pub mod find_all_anagrams_in_a_string;
+pub mod hamming_distance;
 pub mod house_robber;
 pub mod implement_str_str;
 pub mod integer_to_roman;
@@ -48,6 +50,5 @@ pub mod two_sum;
 pub mod two_sum_ii;
 pub mod valid_palindrome;
 pub mod valid_parentheses;
-pub mod find_all_anagrams_in_a_string;
 
 pub mod leetcode;
