@@ -18,6 +18,7 @@ pub mod house_robber;
 pub mod implement_str_str;
 pub mod integer_to_roman;
 pub mod invert_binary_tree;
+pub mod isomorphic_strings;
 pub mod length_of_last_word;
 pub mod longest_common_prefix;
 pub mod longest_substring_without_repeating_characters;
