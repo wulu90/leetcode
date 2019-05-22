@@ -37,37 +37,37 @@ impl MyStack {
     }
 
     pub fn push(&mut self, x: i32) {
-        self.stack.push_back(x);
+        if self.stack.is_empty() {
+            self.stack.push_back(x);
+            while let Some(v) = self.temp.pop_front() {
+                self.stack.push_back(v);
+            }
+        } else {
+            self.temp.push_back(x);
+            while let Some(v) = self.stack.pop_front() {
+                self.temp.push_back(v);
+            }
+        }
     }
 
     pub fn pop(&mut self) -> i32 {
-        let mut v = self.stack.front().unwrap().clone();
-        for _ in 0..self.stack.len() {
-            v = self.stack.pop_front().unwrap();
-            self.temp.push_back(v);
+        if self.stack.is_empty() {
+            self.temp.pop_front().unwrap()
+        } else {
+            self.stack.pop_front().unwrap()
         }
-        for _ in 0..self.temp.len() - 1 {
-            self.stack.push_back(self.temp.pop_front().unwrap());
-        }
-        //empty temp
-        self.temp.pop_front();
-        v
     }
 
     pub fn top(&mut self) -> i32 {
-        let mut v = self.stack.front().unwrap().clone();
-        for _ in 0..self.stack.len() {
-            v = self.stack.pop_front().unwrap();
-            self.temp.push_back(v);
+        if self.stack.is_empty() {
+            *self.temp.front().unwrap()
+        } else {
+            *self.stack.front().unwrap()
         }
-        for _ in 0..self.temp.len() {
-            self.stack.push_back(self.temp.pop_front().unwrap());
-        }
-        v
     }
 
     pub fn empty(&self) -> bool {
-        self.stack.is_empty()
+        self.stack.is_empty() && self.temp.is_empty()
     }
 }
 
