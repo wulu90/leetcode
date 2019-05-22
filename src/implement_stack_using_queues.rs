@@ -82,18 +82,13 @@ mod test {
         obj.push(1);
         obj.push(2);
         let ret_2: i32 = obj.pop();
-        println!("{:?}", obj.stack);
         assert_eq!(2, ret_2);
         let ret_3: i32 = obj.top();
-        println!("{:?}", obj.stack);
         assert_eq!(1, ret_3);
         let ret_4: bool = obj.empty();
-        println!("{:?}", obj.stack);
         assert_eq!(false, ret_4);
         let ret_5 = obj.pop();
-        println!("{:?}", obj.stack);
         assert_eq!(1, ret_5);
-        println!("{:?}", obj.stack);
         assert_eq!(true, obj.empty());
     }
 
