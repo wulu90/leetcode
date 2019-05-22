@@ -12,7 +12,7 @@
 pub struct Solution;
 
 impl Solution {
-    pub fn count_primes(n: i32) -> i32 {
+    pub fn count_primes_1(n: i32) -> i32 {
         if n < 3 {
             return 0;
         }
@@ -25,6 +25,34 @@ impl Solution {
                 }
             }
         }
+        count
+    }
+
+    pub fn count_primes(n: i32) -> i32 {
+        if n < 3 {
+            return 0;
+        }
+        // 1,3,5,7,9,11,13,15,17,19
+        let mut v = vec![true; n as usize / 2];
+        let mut i = 1;
+        let mut j;
+
+        while i < (n as f32).sqrt() as i32 {
+            j = i + 2 * i + 1;
+            while j < n / 2 {
+                v[j as usize] = false;
+                j += 2 * i + 1;
+            }
+            i += 1;
+        }
+
+        let mut count = 1;
+        for i in 1..n / 2 {
+            if v[i as usize] {
+                count += 1;
+            }
+        }
+
         count
     }
 }
@@ -49,6 +77,6 @@ mod test {
         assert_eq!(25, Solution::count_primes(100));
         assert_eq!(168, Solution::count_primes(1000));
         assert_eq!(1229, Solution::count_primes(10000));
-        //assert_eq!(9592, Solution::count_primes(2147483647));
+        //assert_eq!(105097564, Solution::count_primes(2147483647));
     }
 }
