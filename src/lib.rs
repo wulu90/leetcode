@@ -56,5 +56,6 @@ pub mod two_sum;
 pub mod two_sum_ii;
 pub mod valid_palindrome;
 pub mod valid_parentheses;
+pub mod implement_stack_using_queues;
 
 pub mod leetcode;
