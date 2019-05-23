@@ -36,6 +36,7 @@ pub mod merge_two_sorted_list;
 pub mod min_stack;
 pub mod minimum_depth_of_binary_tree;
 pub mod move_zeros;
+pub mod next_permutation;
 pub mod palindrome_number;
 pub mod pascal_triangle;
 pub mod pascal_triangle_ii;
