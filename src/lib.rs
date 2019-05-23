@@ -56,6 +56,7 @@ pub mod single_number;
 pub mod sqrtx;
 pub mod symmetric_tree;
 pub mod three_sum;
+pub mod three_sum_closest;
 pub mod two_sum;
 pub mod two_sum_ii;
 pub mod valid_palindrome;
