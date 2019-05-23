@@ -15,6 +15,7 @@ pub mod excel_sheet_column_number;
 pub mod excel_sheet_column_title;
 pub mod factorial_trailing_zeros;
 pub mod find_all_anagrams_in_a_string;
+pub mod four_sum;
 pub mod hamming_distance;
 pub mod happy_number;
 pub mod house_robber;
