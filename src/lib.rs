@@ -15,7 +15,7 @@ pub mod excel_sheet_column_number;
 pub mod excel_sheet_column_title;
 pub mod factorial_trailing_zeros;
 pub mod find_all_anagrams_in_a_string;
-pub mod four_sum;
+pub mod find_first_and_last_position_of_element_in_sorted_array;
 pub mod hamming_distance;
 pub mod happy_number;
 pub mod house_robber;
@@ -64,5 +64,6 @@ pub mod two_sum;
 pub mod two_sum_ii;
 pub mod valid_palindrome;
 pub mod valid_parentheses;
+
 
 pub mod leetcode;
