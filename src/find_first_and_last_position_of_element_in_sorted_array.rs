@@ -91,6 +91,5 @@ mod test {
         assert_eq!(vec![-1, -1], Solution::search_range(vec![7], 6));
         assert_eq!(vec![-1, -1], Solution::search_range(vec![7], 8));
         assert_eq!(vec![-1, -1], Solution::search_range(vec![], 0));
-
     }
 }
