@@ -6,6 +6,7 @@ pub mod best_time_to_buy_and_sell_stock_ii;
 pub mod binary_tree_level_order_traversal_ii;
 pub mod climbing_stairs;
 pub mod combination_sum;
+pub mod combination_sum_ii;
 pub mod container_with_most_water;
 pub mod contains_duplicate;
 pub mod contains_duplicate_ii;
@@ -66,6 +67,5 @@ pub mod two_sum;
 pub mod two_sum_ii;
 pub mod valid_palindrome;
 pub mod valid_parentheses;
-
 
 pub mod leetcode;
