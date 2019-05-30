@@ -42,6 +42,22 @@ impl Solution {
             set.len() as i32 + 1
         };
     }
+
+    pub fn first_missing_positive_1(mut nums: Vec<i32>) -> i32 {
+        let n = nums.len();
+        for i in 0..n {
+            while nums[i] > 0 && nums[i] <= n as i32 && nums[(nums[i] - 1) as usize] != nums[i] {
+                let val = nums[i];
+                nums.swap(i, (val - 1) as usize);
+            }
+        }
+        for i in 0..n {
+            if nums[i] != (i + 1) as i32 {
+                return (i + 1) as i32;
+            }
+        }
+        return (n + 1) as i32;
+    }
 }
 
 #[cfg(test)]
@@ -59,5 +75,19 @@ mod test {
         assert_eq!(3, Solution::first_missing_positive(vec![1, 2]));
         assert_eq!(2, Solution::first_missing_positive(vec![3, 4, -1, 1]));
         assert_eq!(1, Solution::first_missing_positive(vec![7, 8, 9, 11, 12]));
+    }
+
+    #[test]
+    fn first_missing_positive_1() {
+        assert_eq!(1, Solution::first_missing_positive_1(vec![]));
+        assert_eq!(1, Solution::first_missing_positive_1(vec![0]));
+        assert_eq!(2, Solution::first_missing_positive_1(vec![1]));
+        assert_eq!(1, Solution::first_missing_positive_1(vec![2]));
+        assert_eq!(1, Solution::first_missing_positive_1(vec![-1]));
+        assert_eq!(3, Solution::first_missing_positive_1(vec![0, 1, 2]));
+        assert_eq!(3, Solution::first_missing_positive_1(vec![1, 2]));
+        assert_eq!(2, Solution::first_missing_positive_1(vec![3, 4, -1, 1]));
+        assert_eq!(5, Solution::first_missing_positive_1(vec![3, 4, -1, 1, 2]));
+        assert_eq!(5, Solution::first_missing_positive_1(vec![3, 4, 1, 2]));
     }
 }
