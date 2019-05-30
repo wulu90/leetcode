@@ -56,6 +56,7 @@ pub mod reverse_integer;
 pub mod reverse_linked_list;
 pub mod roman_to_integer;
 pub mod rotate_array;
+pub mod rotate_image;
 pub mod same_tree;
 pub mod search_in_rotated_sorted_array;
 pub mod search_insert_position;
