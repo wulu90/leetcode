@@ -61,6 +61,7 @@ pub mod same_tree;
 pub mod search_in_rotated_sorted_array;
 pub mod search_insert_position;
 pub mod single_number;
+pub mod spiral_matrix;
 pub mod sqrtx;
 pub mod symmetric_tree;
 pub mod three_sum;
