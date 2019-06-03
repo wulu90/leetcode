@@ -31,6 +31,7 @@ pub mod invert_binary_tree;
 pub mod isomorphic_strings;
 pub mod length_of_last_word;
 pub mod longest_common_prefix;
+pub mod longest_palindromic_substring;
 pub mod longest_substring_without_repeating_characters;
 pub mod majority_element;
 pub mod maximum_depth_of_binary_tree;
