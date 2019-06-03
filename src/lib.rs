@@ -66,6 +66,7 @@ pub mod search_insert_position;
 pub mod single_number;
 pub mod spiral_matrix;
 pub mod sqrtx;
+pub mod string_to_integer;
 pub mod symmetric_tree;
 pub mod three_sum;
 pub mod three_sum_closest;
