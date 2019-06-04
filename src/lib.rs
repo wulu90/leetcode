@@ -29,6 +29,7 @@ pub mod implement_str_str;
 pub mod integer_to_roman;
 pub mod invert_binary_tree;
 pub mod isomorphic_strings;
+pub mod letter_combinations_of_a_phone_number;
 pub mod length_of_last_word;
 pub mod longest_common_prefix;
 pub mod longest_palindromic_substring;
