@@ -50,6 +50,7 @@ pub mod pascal_triangle;
 pub mod pascal_triangle_ii;
 pub mod path_sum;
 pub mod path_sum_iii;
+pub mod permutation;
 pub mod plus_one;
 pub mod pow_x_n;
 pub mod power_of_two;
