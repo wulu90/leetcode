@@ -21,6 +21,7 @@ pub mod find_first_and_last_position_of_element_in_sorted_array;
 pub mod first_missing_positive;
 pub mod four_sum;
 pub mod generate_parentheses;
+pub mod group_anagrams;
 pub mod hamming_distance;
 pub mod happy_number;
 pub mod house_robber;
