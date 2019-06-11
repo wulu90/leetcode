@@ -69,6 +69,7 @@ pub mod rotate_image;
 pub mod same_tree;
 pub mod search_in_rotated_sorted_array;
 pub mod search_insert_position;
+pub mod set_matrix_zeroes;
 pub mod single_number;
 pub mod spiral_matrix;
 pub mod sqrtx;
