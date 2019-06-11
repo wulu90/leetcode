@@ -80,6 +80,7 @@ pub mod three_sum_closest;
 pub mod two_sum;
 pub mod two_sum_ii;
 pub mod unique_paths;
+pub mod unique_paths_ii;
 pub mod valid_palindrome;
 pub mod valid_parentheses;
 pub mod zigzag_conversion;
