@@ -44,6 +44,7 @@ pub mod merge_sorted_array;
 pub mod merge_two_sorted_list;
 pub mod min_stack;
 pub mod minimum_depth_of_binary_tree;
+pub mod minimum_path_sum;
 pub mod move_zeros;
 pub mod multiply_strings;
 pub mod next_permutation;
