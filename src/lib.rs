@@ -13,6 +13,7 @@ pub mod contains_duplicate_ii;
 pub mod convert_sorted_array_to_binary_search_tree;
 pub mod count_and_say;
 pub mod count_primes;
+pub mod dungeon_game;
 pub mod excel_sheet_column_number;
 pub mod excel_sheet_column_title;
 pub mod factorial_trailing_zeros;
