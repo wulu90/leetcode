@@ -69,6 +69,7 @@ pub mod roman_to_integer;
 pub mod rotate_array;
 pub mod rotate_image;
 pub mod same_tree;
+pub mod search_a_2d_matrix;
 pub mod search_in_rotated_sorted_array;
 pub mod search_insert_position;
 pub mod set_matrix_zeroes;
