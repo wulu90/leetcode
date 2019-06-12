@@ -7,6 +7,7 @@ pub mod binary_tree_level_order_traversal_ii;
 pub mod climbing_stairs;
 pub mod combination_sum;
 pub mod combination_sum_ii;
+pub mod combinations;
 pub mod container_with_most_water;
 pub mod contains_duplicate;
 pub mod contains_duplicate_ii;
