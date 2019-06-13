@@ -4,6 +4,7 @@ pub mod balanced_binary_tree;
 pub mod best_time_to_buy_and_sell_stock;
 pub mod best_time_to_buy_and_sell_stock_ii;
 pub mod binary_tree_inorder_travesal;
+pub mod binary_tree_level_order_traversal;
 pub mod binary_tree_level_order_traversal_ii;
 pub mod climbing_stairs;
 pub mod combination_sum;
