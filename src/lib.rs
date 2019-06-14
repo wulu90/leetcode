@@ -81,6 +81,7 @@ pub mod spiral_matrix;
 pub mod sqrtx;
 pub mod string_to_integer;
 pub mod symmetric_tree;
+pub mod target_sum;
 pub mod three_sum;
 pub mod three_sum_closest;
 pub mod two_sum;
