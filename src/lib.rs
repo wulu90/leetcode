@@ -13,6 +13,7 @@ pub mod combinations;
 pub mod container_with_most_water;
 pub mod contains_duplicate;
 pub mod contains_duplicate_ii;
+pub mod convert_bst_to_greater_tree;
 pub mod convert_sorted_array_to_binary_search_tree;
 pub mod count_and_say;
 pub mod count_primes;
