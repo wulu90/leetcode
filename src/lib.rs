@@ -17,6 +17,7 @@ pub mod convert_bst_to_greater_tree;
 pub mod convert_sorted_array_to_binary_search_tree;
 pub mod count_and_say;
 pub mod count_primes;
+pub mod diameter_of_binary_tree;
 pub mod dungeon_game;
 pub mod excel_sheet_column_number;
 pub mod excel_sheet_column_title;
