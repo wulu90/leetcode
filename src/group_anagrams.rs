@@ -17,7 +17,6 @@
  * The order of your output does not matter.
  *
  */
-
 use std::collections::{BTreeMap, HashMap};
 use std::time::Instant;
 pub struct Solution;
@@ -53,7 +52,6 @@ impl Solution {
 
             let t4 = Instant::now();
             println!("t4-t3 {:?}", t4.duration_since(t3));
-
         }
         map.values().map(|x| x.clone()).collect()
     }
@@ -82,7 +80,7 @@ mod test {
     #[test]
     fn group_anagrams() {
         assert_eq!(
-            vec![vec!["ate", "eat", "tea"], vec!["nat", "tan"], vec!["bat"]],
+            vec![vec!["bat"], vec!["eat", "tea", "ate"], vec!["tan", "nat"]],
             Solution::group_anagrams(
                 "eat,tea,tan,ate,nat,bat"
                     .split(',')
